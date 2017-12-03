@@ -1,5 +1,5 @@
-aws_access_key: AKIAJ2ORVGDP2KMQY76Q
-aws_secret_key: 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
+aws_access_key: 
+aws_secret_key: 
 key_name: aws-demo
 aws_region: us-east-1
 ami_id: ami-aa2ea6d0
