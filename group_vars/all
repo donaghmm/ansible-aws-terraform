@@ -1,8 +1,0 @@
-aws_access_key:
-aws_secret_key: O
-key_name: aws-demo
-aws_region: us-east-1
-ami_id: ami-aa2ea6d0
-#ansible_user: ec2-user
-#ansible_python_interpreter: /usr/bin/python
-instance_type: t2.micro
