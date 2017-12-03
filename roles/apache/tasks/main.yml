@@ -26,3 +26,17 @@
     creates: /etc/apache2/sites-enabled/{{ domain }}.conf
   notify:
     - restart apache2
+
+- name: enable ajp proxy
+  command: a2enmod {{ item }}
+  with_items:
+     - 'proxy_ajp'
+     - 'proxy'
+     - 'proxy_http'
+  notify:
+    - restart apache2
+
+- name: apache2 reverse proxy
+  template: src=000-default.conf dest=/etc/apache2/sites-available/000-default.conf
+  notify:
+      - restart apache2

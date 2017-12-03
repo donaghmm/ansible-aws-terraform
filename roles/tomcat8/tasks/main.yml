@@ -77,3 +77,7 @@
     state: started
     enabled: true
     daemon_reload: true
+
+- name: Configure Tomcat server
+  template: src=server.xml dest="{{tomcat_archive_install_path}}/conf/
+  notify: restart tomcat
