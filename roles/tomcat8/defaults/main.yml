@@ -11,4 +11,4 @@ tomcat_roles:
   - manager-jmx
   - manager-status
 tomcat_users: []
-http_port:8080
+http_port: 8080
