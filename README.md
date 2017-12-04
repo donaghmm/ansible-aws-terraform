@@ -14,7 +14,7 @@ Before running the playbook, you need to to make changes to a few of the configu
 
 ### ansible.cfg
 
-Edit `ansible.cfg` to specify the location of your AWS private key file. Ensure key pair is created in the region. KeyPair used in the demo is aws_demo.
+Edit `ansible.cfg` to specify the location of your AWS private key file. Ensure key pair is created in the region. KeyPair used in the demo is aws-demo.
 
 ### group_vars/all
 
