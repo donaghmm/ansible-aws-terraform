@@ -40,5 +40,5 @@ Edit `Terraform/terrafor.tfvars` to set the following values:
 To run the playbook, you only need to use a single command
 
 ```bash
-$ ansible-playbook -i inventory/hosts playbooks/ansible-terraform.yml
+$ ansible-playbook -i inventory/hosts ansible-terraform.yml
 ```
