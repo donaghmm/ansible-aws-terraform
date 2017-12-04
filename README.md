@@ -4,6 +4,10 @@
   Terraform then uses this image to launch ELB and ASG in three AZ in AWS eu-east-1 region.
   The workflow is controlled and orchestrated through Ansible
 
+## Software requirments
+Ansible and Terraform installed on the local machine and added to default path.
+export PATH=$PATH:/path/to/installtion.
+
 ## Python requirments
   boto3
   boto
@@ -14,7 +18,9 @@ Before running the playbook, you need to to make changes to a few of the configu
 
 ### ansible.cfg
 
-Edit `ansible.cfg` to specify the location of your AWS private key file. Ensure key pair is created in the region. KeyPair used in the demo is aws-demo.
+Edit `ansible.cfg` to specify the location of your AWS private key file. Ensure key pair is created in the region. 
+KeyPair used in the demo is aws-demo. 
+Change the permission of the keypair : chmod 400 aws-demo.pem
 
 ### group_vars/all
 
